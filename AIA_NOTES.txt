@@ -1,0 +1,94 @@
+================================================================
+AIA SURVEYORS — MASTER NOTES
+================================================================
+Last updated: 2026-06-22
+Source: GST Registration Certificate (Form GST REG-06) +
+        AIA Surveyors letterhead (PDF).
+Built to match the polish of the Shahi Group site, but for a
+PURE SURVEY-SERVICES firm — no product sales, no training/academy,
+no Leica glamourising.
+
+================================================================
+1. COMPANY FACTS (verbatim from documents)
+================================================================
+Trade name:     AIA Surveyors
+Legal name:     Saiyed Rahmatullah (Proprietor)
+Constitution:   Proprietorship
+GSTIN:          07BRKPR7554N1ZU  (Regular, Delhi)
+Registered:     13/07/2020  -> "Since 2020"
+Address:        C-278/3, Fourth Floor, F/Side, A.F. Encl. Part II,
+                Shaheen Bagh, Jamia Nagar, New Delhi - 110025
+Email:          zafarrahmat@gmail.com
+Mobile:         +91 98107 47407
+Tagline (ours): "Precision on Every Terrain"
+
+Brand positioning:
+  A dedicated land & infrastructure SURVEY house. One thing,
+  done to the millimetre. No products to push, no courses to
+  sell — just survey, done right, on time. Single point of
+  accountability (proprietor-led).
+
+NOTE: AIA does NOT sell instruments and does NOT run a training
+academy. Do not invent client logos, fake mega-numbers, Leica
+dealership claims, or course pricing. Numbers used on the site are
+capability-based and honest (8 disciplines, since 2020, cm-level
+accuracy, on-time delivery), not fabricated project tallies.
+
+================================================================
+2. SERVICES — "ALL TYPES OF SURVEY" (from the letterhead)
+================================================================
+  1. Topographical Survey
+  2. Road Survey
+  3. Railway Line Survey
+  4. Gas Pipeline Survey
+  5. Land Demarcation
+  6. Building Layout
+  7. As Built Survey
+  8. Measurement Survey
+(These 8 drive the Services section + Contact dropdown + Footer.)
+
+Sectors served (gallery): Highways & Roads, Railways & Corridors,
+Oil & Gas Pipelines, Water & Irrigation, Real Estate & Layout,
+Industrial & As-Built.
+
+================================================================
+3. TECH STACK & STRUCTURE
+================================================================
+Next.js 14 (App Router) · TypeScript · Tailwind CSS ·
+Framer Motion · Lenis smooth scroll. Same toolchain as Shahi.
+
+Brand colour: accent BLUE #2E7DFF (hover #5599FF), on near-black
+#0B0E14 / #080A0F. (Shahi used red #C8102E — fully swapped.)
+Fonts: Inter (sans) + Fraunces (display) + mono accents.
+
+One-page section flow:
+  Loader -> Navbar -> Hero -> About -> Stats -> Services ->
+  Process -> WhyChooseUs -> Sectors -> FAQ -> Contact -> Footer
+
+Components (src/components):
+  Logo, Navbar, HeroSection, About, Stats, Services, Process,
+  WhyChooseUs, Sectors, FAQ, Contact, Footer,
+  LoadingScreen, SmoothScroll, NoiseOverlay, ScrollProgress,
+  ScrollReveal, AnimatedCounter, ShimmerImage.
+
+Config: src/lib/siteConfig.ts holds all company facts — edit there.
+
+================================================================
+4. IMAGES
+================================================================
+public/images/ currently uses generic survey/field photos reused
+from Shahi (no Shahi branding visible). Bespoke AIA replacements:
+see /PROMPT/README.md — same filenames, drop-in, no code change.
+Logo is an inline SVG (compass star + total-station glyph, blue):
+  public/images/logo.svg  +  src/components/Logo.tsx
+
+================================================================
+5. RUN
+================================================================
+  npm install
+  npm run dev      # http://localhost:3000
+  npm run build && npm start
+
+Contact form is front-end only (simulated submit). Wire it to a
+real endpoint / mailto / form service before going live.
+================================================================

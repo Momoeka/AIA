@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <circle cx="32" cy="32" r="30" stroke="#2E7DFF" stroke-width="2.5"/>
+  <!-- compass star -->
+  <path d="M32 4 L37 27 L60 32 L37 37 L32 60 L27 37 L4 32 L27 27 Z" fill="#2E7DFF" fill-opacity="0.16" stroke="#2E7DFF" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- crosshair -->
+  <path d="M32 12 V52 M12 32 H52" stroke="#2E7DFF" stroke-width="1" stroke-dasharray="2 3"/>
+  <!-- total station / tripod glyph -->
+  <rect x="28" y="24" width="8" height="6" rx="1" fill="#2E7DFF"/>
+  <circle cx="32" cy="27" r="1.6" fill="#0B0E14"/>
+  <path d="M32 30 L24 46 M32 30 L40 46 M32 30 L32 44" stroke="#2E7DFF" stroke-width="2" stroke-linecap="round"/>
+  <circle cx="32" cy="32" r="3.5" stroke="#2E7DFF" stroke-width="1.5"/>
+</svg>
